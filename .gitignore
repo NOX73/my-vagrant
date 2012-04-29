@@ -1,2 +1,3 @@
 *.box
-my-recipes/cookbooks/runit/*
+*.swp
+
