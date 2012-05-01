@@ -1,0 +1,19 @@
+{
+  "name": "django_application",
+  "description": "The base role for django application",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[apt]",
+    "recipe[nginx]",
+    "recipe[postgresql]",
+    "recipe[django]"
+  ],
+  "env_run_lists": {
+  }
+}
+
