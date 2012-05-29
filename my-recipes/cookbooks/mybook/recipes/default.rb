@@ -1,5 +1,6 @@
 package "vim"
 package "git-core"
+package "curl"
 ppa "pitti/postgresql"
 
 
