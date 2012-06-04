@@ -1,0 +1,19 @@
+[submodule "chef-apt-repo"]
+      path = my-recipes/cookbooks/chef-apt-repo
+      url = git://github.com/sometimesfood/chef-apt-repo.git
+[submodule "kaize-cookbooks"]
+      path = my-recipes/cookbooks/kaize-cookbooks
+      url = git://github.com/kaize/cookbooks.git
+[submodule "monit"]
+      path = my-recipes/cookbooks/monit
+      url = git://github.com/NOX73/monit.git
+[submodule "rails-quick-start"]
+      path = my-recipes/cookbooks/rails-quick-start
+      url = https://github.com/opscode/rails-quick-start.git
+[submodule "runit"]
+      path = my-recipes/cookbooks/runit
+      url = https://github.com/opscode-cookbooks/runit.git
+[submodule "rvm"]
+      path = my-recipes/cookbooks/rvm
+      url = https://github.com/fnichol/chef-rvm.git
+
