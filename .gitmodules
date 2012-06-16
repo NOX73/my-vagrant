@@ -16,4 +16,7 @@
 [submodule "rvm"]
       path = my-recipes/cookbooks/rvm
       url = https://github.com/fnichol/chef-rvm.git
+[submodule "chef-server"]
+      path = my-recipes/cookbooks/chef-server
+      url = https://github.com/opscode-cookbooks/chef-server.git
 
