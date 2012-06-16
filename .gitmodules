@@ -25,3 +25,6 @@
 [submodule "my-recipes/cookbooks/couchdb"]
 	path = my-recipes/cookbooks/couchdb
 	url = https://github.com/opscode-cookbooks/couchdb.git
+[submodule "my-recipes/cookbooks/erlang"]
+	path = my-recipes/cookbooks/erlang
+	url = https://github.com/opscode-cookbooks/erlang.git
