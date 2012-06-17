@@ -7,7 +7,7 @@ Vagrant::Config.run do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "lucid64"
+  config.vm.box = "debian-squeeze-64"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
@@ -64,7 +64,7 @@ Vagrant::Config.run do |config|
   # some recipes and/or roles.
   #
    config.vm.provision :chef_solo do |chef|
-     chef.cookbooks_path = "../my-recipes/cookbooks"
+     chef.cookbooks_path = "../my-recipes/chef-server-cookbooks"
      chef.roles_path = "../my-recipes/roles"
   #   chef.data_bags_path = "../my-recipes/data_bags"
      chef.add_role "chef_server"

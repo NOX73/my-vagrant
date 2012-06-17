@@ -1,0 +1,3 @@
+vagrant box add lucid32 http://files.vagrantup.com/lucid32.box
+vagrant box add debian-squeeze-64 http://dl.dropbox.com/u/937870/VMs/squeeze64.box
+vagrant box add debian-squeeze-32 http://mathie-vagrant-boxes.s3.amazonaws.com/debian_squeeze_32.box
