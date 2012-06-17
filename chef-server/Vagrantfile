@@ -26,10 +26,9 @@ Vagrant::Config.run do |config|
   # network using the host's network device. This makes the VM appear as another
   # physical device on your network.
   config.vm.host_name = 'chef-server'
-  config.vm.network :bridged, "192.168.1.51"
-  #config.vm.customize do |vm|
-  #  vm.ip_address = '192.168.1.51'
-  #end
+  config.vm.network :bridged
+  #config.vm.network :bridged, :mac => '080027B2053A'
+  config.vm.base_mac = '080027B2053A'
 
   # Forward a port from the guest to the host, which allows for outside
   # computers to access the VM, whereas host only networking does not.
