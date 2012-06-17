@@ -5,11 +5,11 @@
   "default_attributes": {
   },
   "override_attributes": {
-  },
-  "chef_server": {
-      "server_url": "http://localhost:4000",
-      "webui_enabled": true,
-      "init_style": "runit"
+      "chef_server": {
+          "server_url": "http://localhost:4000",
+          "webui_enabled": true,
+          "init_style": "runit"
+      }
   },
   "chef_type": "role",
   "run_list": [
