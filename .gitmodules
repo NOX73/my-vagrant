@@ -41,3 +41,6 @@
 [submodule "my-recipes/chef-server-cookbooks/zlib"]
 	path = my-recipes/chef-server-cookbooks/zlib
 	url = git://github.com/opscode-cookbooks/zlib.git
+[submodule "my-recipes/chef-server-cookbooks/apt"]
+	path = my-recipes/chef-server-cookbooks/apt
+	url = git://github.com/opscode-cookbooks/apt.git
