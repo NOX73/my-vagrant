@@ -26,3 +26,18 @@
 [submodule "my-recipes/chef-server-cookbooks/chef-server"]
 	path = my-recipes/chef-server-cookbooks/chef-server
 	url = git://github.com/opscode-cookbooks/chef-server.git
+[submodule "my-recipes/chef-server-cookbooks/erlang"]
+	path = my-recipes/chef-server-cookbooks/erlang
+	url = git://github.com/opscode-cookbooks/erlang.git
+[submodule "my-recipes/chef-server-cookbooks/gecode"]
+	path = my-recipes/chef-server-cookbooks/gecode
+	url = git://github.com/opscode-cookbooks/gecode.git
+[submodule "my-recipes/chef-server-cookbooks/java"]
+	path = my-recipes/chef-server-cookbooks/java
+	url = git://github.com/opscode-cookbooks/java.git
+[submodule "my-recipes/chef-server-cookbooks/xml"]
+	path = my-recipes/chef-server-cookbooks/xml
+	url = git://github.com/opscode-cookbooks/xml.git
+[submodule "my-recipes/chef-server-cookbooks/zlib"]
+	path = my-recipes/chef-server-cookbooks/zlib
+	url = git://github.com/opscode-cookbooks/zlib.git
