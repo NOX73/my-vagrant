@@ -20,3 +20,6 @@
 [submodule "my-recipes/cookbooks/apache2"]
 	path = my-recipes/cookbooks/apache2
 	url = https://github.com/opscode-cookbooks/apache2.git
+[submodule "my-recipes/chef-server-cookbooks/couchdb"]
+	path = my-recipes/chef-server-cookbooks/couchdb
+	url = git://github.com/opscode-cookbooks/couchdb.git
