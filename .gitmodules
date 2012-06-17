@@ -11,15 +11,11 @@
 [submodule "rails-quick-start"]
       path = my-recipes/cookbooks/rails-quick-start
       url = https://github.com/opscode/rails-quick-start.git
-[submodule "runit"]
-      path = my-recipes/cookbooks/runit
-      url = https://github.com/opscode-cookbooks/runit.git
+
 [submodule "rvm"]
       path = my-recipes/cookbooks/rvm
       url = https://github.com/fnichol/chef-rvm.git
-[submodule "my-recipes/cookbooks/apache2"]
-	path = my-recipes/cookbooks/apache2
-	url = https://github.com/opscode-cookbooks/apache2.git
+
 [submodule "my-recipes/chef-server-cookbooks/couchdb"]
 	path = my-recipes/chef-server-cookbooks/couchdb
 	url = git://github.com/opscode-cookbooks/couchdb.git
@@ -47,3 +43,6 @@
 [submodule "my-recipes/shared-cookbooks/apache2"]
 	path = my-recipes/shared-cookbooks/apache2
 	url = git://github.com/opscode-cookbooks/apache2.git
+[submodule "my-recipes/shared-cookbooks/runit"]
+	path = my-recipes/shared-cookbooks/runit
+	url = git://github.com/opscode-cookbooks/runit.git
