@@ -25,10 +25,11 @@ Vagrant::Config.run do |config|
   # Assign this VM to a bridged network, allowing you to connect directly to a
   # network using the host's network device. This makes the VM appear as another
   # physical device on your network.
-  config.vm.network :bridged
-  config.vm.customize do |vm|
-    vm.ip_address = '192.168.1.51'
-  end
+  config.vm.host_name = 'chef-server'
+  config.vm.network :bridged, "192.168.1.51"
+  #config.vm.customize do |vm|
+  #  vm.ip_address = '192.168.1.51'
+  #end
 
   # Forward a port from the guest to the host, which allows for outside
   # computers to access the VM, whereas host only networking does not.
