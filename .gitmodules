@@ -20,36 +20,3 @@
 [submodule "my-recipes/cookbooks/apache2"]
 	path = my-recipes/cookbooks/apache2
 	url = https://github.com/opscode-cookbooks/apache2.git
-
-
-[submodule "my-recipes/chef-server-cookbooks/apt"]
-	path = my-recipes/chef-server-cookbooks/apt
-	url = https://github.com/opscode-cookbooks/apt.git
-
-[submodule "my-recipes/chef-server-cookbooks/chef-server"]
-	path = my-recipes/chef-server-cookbooks/chef-server
-	url = https://github.com/opscode-cookbooks/chef-server.git
-
-[submodule "my-recipes/chef-server-cookbooks/couchdb"]
-	path = my-recipes/chef-server-cookbooks/couchdb
-	url = https://github.com/opscode-cookbooks/couchdb.git
-
-[submodule "my-recipes/chef-server-cookbooks/erlang"]
-	path = my-recipes/chef-server-cookbooks/erlang
-	url = https://github.com/opscode-cookbooks/erlang.git
-
-[submodule "my-recipes/chef-server-cookbooks/java"]
-	path = my-recipes/chef-server-cookbooks/java
-	url = https://github.com/opscode-cookbooks/java.git
-
-[submodule "my-recipes/chef-server-cookbooks/gecode"]
-	path = my-recipes/chef-server-cookbooks/gecode
-	url = https://github.com/opscode-cookbooks/gecode.git
-
-[submodule "my-recipes/chef-server-cookbooks/zlib"]
-	path = my-recipes/chef-server-cookbooks/zlib
-	url = https://github.com/opscode-cookbooks/zlib.git
-
-[submodule "my-recipes/chef-server-cookbooks/xml"]
-	path = my-recipes/chef-server-cookbooks/xml
-	url = https://github.com/opscode-cookbooks/xml.git
