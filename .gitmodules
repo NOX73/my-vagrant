@@ -44,3 +44,6 @@
 [submodule "my-recipes/chef-server-cookbooks/apt"]
 	path = my-recipes/chef-server-cookbooks/apt
 	url = git://github.com/opscode-cookbooks/apt.git
+[submodule "my-recipes/shared-cookbooks/apache2"]
+	path = my-recipes/shared-cookbooks/apache2
+	url = git://github.com/opscode-cookbooks/apache2.git

@@ -8,7 +8,8 @@
   },
   "chef_server": {
       "server_url": "http://localhost:4000",
-      "webui_enabled": true
+      "webui_enabled": true,
+      "init_style": "runit"
   },
   "chef_type": "role",
   "run_list": [
