@@ -19,9 +19,6 @@
 [submodule "my-recipes/chef-server-cookbooks/couchdb"]
 	path = my-recipes/chef-server-cookbooks/couchdb
 	url = git://github.com/opscode-cookbooks/couchdb.git
-[submodule "my-recipes/chef-server-cookbooks/chef-server"]
-	path = my-recipes/chef-server-cookbooks/chef-server
-	url = git://github.com/opscode-cookbooks/chef-server.git
 [submodule "my-recipes/chef-server-cookbooks/erlang"]
 	path = my-recipes/chef-server-cookbooks/erlang
 	url = git://github.com/opscode-cookbooks/erlang.git
@@ -46,3 +43,6 @@
 [submodule "my-recipes/shared-cookbooks/runit"]
 	path = my-recipes/shared-cookbooks/runit
 	url = git://github.com/opscode-cookbooks/runit.git
+[submodule "my-recipes/chef-server-cookbooks/chef-server"]
+	path = my-recipes/chef-server-cookbooks/chef-server
+	url = git@github.com:NOX73/chef-server.git
