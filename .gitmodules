@@ -46,3 +46,7 @@
 [submodule "my-recipes/chef-server-cookbooks/chef-server"]
 	path = my-recipes/chef-server-cookbooks/chef-server
 	url = git@github.com:NOX73/chef-server.git
+[submodule "dusha-ek"]
+        path = dusha-ek
+        ignore = dirty
+
