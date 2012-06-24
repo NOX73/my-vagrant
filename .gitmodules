@@ -3,7 +3,7 @@
       url = git://github.com/sometimesfood/chef-apt-repo.git
 
 [submodule "kaize-cookbooks"]
-      path = my-recipes/cookbooks/kaize-cookbooks
+      path = my-recipes/kaize-cookbooks
       url = git://github.com/kaize/cookbooks.git
 [submodule "monit"]
       path = my-recipes/cookbooks/monit
@@ -46,7 +46,7 @@
 [submodule "my-recipes/chef-server-cookbooks/chef-server"]
 	path = my-recipes/chef-server-cookbooks/chef-server
 	url = git@github.com:NOX73/chef-server.git
-[submodule "dusha-ek"]
-        path = dusha-ek
-        ignore = dirty
 
+[submodule "my-recipes/kaize-cookbooks"]
+	path = my-recipes/kaize-cookbooks
+	url = git@github.com:kaize/cookbooks.git
