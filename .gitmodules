@@ -2,9 +2,6 @@
       path = my-recipes/cookbooks/chef-apt-repo
       url = git://github.com/sometimesfood/chef-apt-repo.git
 
-[submodule "kaize-cookbooks"]
-      path = my-recipes/kaize-cookbooks
-      url = git://github.com/kaize/cookbooks.git
 [submodule "monit"]
       path = my-recipes/cookbooks/monit
       url = git://github.com/NOX73/monit.git
