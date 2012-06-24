@@ -50,3 +50,6 @@
 [submodule "my-recipes/kaize-cookbooks"]
 	path = my-recipes/kaize-cookbooks
 	url = git@github.com:kaize/cookbooks.git
+[submodule "dusha-ek"]
+	path = dusha-ek
+	url = git@bitbucket.org:nox73/dusha-ek_chef.git
