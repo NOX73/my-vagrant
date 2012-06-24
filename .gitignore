@@ -1,5 +1,4 @@
 *.box
 *.swp
 .idea
-.vagrant
 /dusha-ek/*
