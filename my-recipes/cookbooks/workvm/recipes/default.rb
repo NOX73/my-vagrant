@@ -1,3 +1,9 @@
+include_recipe "apt"
+include_recipe "rvm::user"
+include_recipe "nginx"
+include_recipe "postgresql"
+include_recipe "runit"
+
 package "vim"
 package "git-core"
 package "curl"
@@ -19,14 +25,11 @@ backports_apt_package "redis-server" do
   provider Chef::Provider::Package::BackportsApt
 end
 
-
-#CHESS
-
-#template '/etc/nginx/conf.d/chess.conf' do
-#  source "nginx_host.conf.erb"
-#  variables :deploy_to => '~/kaize/chess', :server_name => "localhost", :name => "chess"
-#  notifies :restart, resources(:service => "nginx")
-#end
+template '/etc/nginx/conf.d/proj.conf' do
+  source "nginx_host.conf.erb"
+  variables :server_name => "localhost", :name => "project"
+  notifies :restart, resources(:service => "nginx")
+end
 
 
 
