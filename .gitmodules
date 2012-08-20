@@ -50,3 +50,9 @@
 [submodule "dusha-ek"]
 	path = dusha-ek
 	url = git@bitbucket.org:nox73/dusha-ek_chef.git
+[submodule "my-recipes/cookbooks/zeromq-cookbook"]
+	path = my-recipes/cookbooks/zeromq-cookbook
+	url = git://github.com/pyronicide/zeromq-cookbook.git
+[submodule "my-recipes/cookbooks/build-essential"]
+	path = my-recipes/cookbooks/build-essential
+	url = git://github.com/cookbooks/build-essential.git

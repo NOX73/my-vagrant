@@ -1,0 +1,54 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant::Config.run do |config|
+  config.vm.box = "debian-squeeze-64"
+  config.vm.box_url = "http://dl.dropbox.com/u/937870/VMs/squeeze64.box"
+  #config.vm.boot_mode = :gui
+  # config.vm.network :hostonly, "192.168.33.10"
+  config.vm.network :bridged
+  config.vm.share_folder "Dropbox", "~/Dropbox", "~/Dropbox"
+
+   config.vm.provision :chef_solo do |chef|
+     chef.cookbooks_path = ["../my-recipes/cookbooks", "../my-recipes/kaize-cookbooks"]
+     chef.roles_path = "../my-recipes/roles"
+     #chef.data_bags_path = "../my-recipes/data_bags"
+     chef.add_recipe "sfk"
+     # chef.add_role "rails_application"
+
+     # You may also specify custom JSON attributes:
+     chef.json = {
+        :rvm =>{
+            :user_installs => [
+            {
+                :user => 'vagrant',
+                :rubies  => ['1.9.2'],
+                :default_ruby  => '1.9.2',
+                :gems => {
+                    'ruby-1.9.2' => [
+                        {
+                            :name => 'sfk',
+                            :source => 'http://gems.undev.cc'
+                        },
+                        {
+                            :name => 'ffi-rzmq'
+                        },
+                        {
+                            :name => 'chef'
+                        }
+                    ]
+                }
+            }
+           ]
+        },
+        :zeromq => {
+            :src_version => "2.2.0",
+            :install_dir => "/usr/local",
+            :src_mirror => "http://download.zeromq.org/zeromq-2.2.0.tar.gz"
+        }
+      }
+   end
+
+end
