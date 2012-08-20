@@ -9,9 +9,8 @@ Vagrant::Config.run do |config|
   #config.vm.boot_mode = :gui
   # config.vm.network :hostonly, "192.168.33.10"
   config.vm.network :bridged
-  # config.vm.forward_port 80, 8080
-  config.vm.share_folder "kaize", "~/kaize", "~/kaize"
-  config.vm.share_folder "work", "~/work", "~/Dropbox/work"
+  config.vm.forward_port 80, 8080
+  config.vm.share_folder "Dropbox", "~/Dropbox", "~/Dropbox"
 
    config.vm.provision :chef_solo do |chef|
      chef.cookbooks_path = ["../my-recipes/cookbooks", "../my-recipes/kaize-cookbooks"]
