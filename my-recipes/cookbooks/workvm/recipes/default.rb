@@ -38,14 +38,9 @@ template '/etc/nginx/conf.d/proj.conf' do
   notifies :restart, resources(:service => "nginx")
 end
 
-group :rvm do
-  members [:vagrant]
+group 'rvm' do
+  members %w'vagrant'
   append true
-end
-
-
-gem_package "chef" do
-  action :install
 end
 
 #template '/etc/rc.local' do
