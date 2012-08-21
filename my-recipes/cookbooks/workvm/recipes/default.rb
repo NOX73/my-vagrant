@@ -21,6 +21,13 @@ directory "/u/apps" do
   mode "0777"
 end
 
+directory "~/kaize" do
+  recursive true
+  owner 'vagrant'
+  group 'vagrant'
+  mode "0755"
+end
+
 backports_apt_package "redis-server" do
   provider Chef::Provider::Package::BackportsApt
 end
@@ -31,8 +38,15 @@ template '/etc/nginx/conf.d/proj.conf' do
   notifies :restart, resources(:service => "nginx")
 end
 
+group :rvm do
+  members [:vagrant]
+  append true
+end
 
 
+gem_package "chef" do
+  action :install
+end
 
 #template '/etc/rc.local' do
 #  source "rc.local.erb"
