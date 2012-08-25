@@ -8,6 +8,7 @@ package "vim"
 package "git-core"
 package "curl"
 package "sphinxsearch"
+package "git-flow"
 #ppa "pitti/postgresql"
 
 include_recipe "elasticsearch"
