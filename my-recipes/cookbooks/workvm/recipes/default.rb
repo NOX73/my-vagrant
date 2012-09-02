@@ -2,6 +2,7 @@ include_recipe "apt"
 include_recipe "rvm::user"
 include_recipe "nginx"
 include_recipe "postgresql"
+include_recipe "mysql::server"
 include_recipe "runit"
 
 package "vim"
@@ -15,6 +16,7 @@ include_recipe "elasticsearch"
 
 package 'imagemagick'
 package 'exim4'
+package 'libmysqlclient-dev'
 
 directory "/u/apps" do
   recursive true
@@ -49,3 +51,4 @@ end
 #  source "rc.local.erb"
 #end
 
+ruby 'ruby-1.9.3-p194'

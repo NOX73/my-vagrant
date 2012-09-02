@@ -12,6 +12,7 @@ Vagrant::Config.run do |config|
   config.vm.forward_port 80, 8080
   config.vm.forward_port 9292, 9292
   config.vm.share_folder "Dropbox", "~/Dropbox", "~/Dropbox"
+  config.vm.share_folder "kaize", "~/kaize_host", "~/kaize"
 
    config.vm.provision :chef_solo do |chef|
      chef.cookbooks_path = ["../my-recipes/cookbooks", "../my-recipes/kaize-cookbooks"]
@@ -22,7 +23,9 @@ Vagrant::Config.run do |config|
 
      # You may also specify custom JSON attributes:
      chef.json = {
-
+        :mysql => {
+            :server_root_password => ''
+        }
       }
    end
 
