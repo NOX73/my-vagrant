@@ -56,3 +56,6 @@
 [submodule "my-recipes/cookbooks/build-essential"]
 	path = my-recipes/cookbooks/build-essential
 	url = git://github.com/cookbooks/build-essential.git
+[submodule "my-recipes/opscode-cookbooks"]
+	path = my-recipes/opscode-cookbooks
+	url = https://github.com/opscode/cookbooks
