@@ -1,5 +1,5 @@
 link "/etc/vpnc" do
-  to "/home/vagrant/Dropbox/etc/vpnc"
+  to "/home/vagrant/Dropbox/etc/vpnc-old"
 end
 
 package "vpnc"

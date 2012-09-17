@@ -11,6 +11,8 @@ Vagrant::Config.run do |config|
   config.vm.network :bridged
   config.vm.share_folder "Dropbox", "~/Dropbox", "~/Dropbox"
   config.vm.forward_port 22, 2223
+  config.vm.forward_port 8085, 8085
+  config.vm.forward_port 8086, 8086
 
    config.vm.provision :chef_solo do |chef|
      chef.cookbooks_path = ["../my-recipes/cookbooks", "../my-recipes/kaize-cookbooks"]
