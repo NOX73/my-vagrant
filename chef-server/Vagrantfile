@@ -9,8 +9,8 @@ Vagrant::Config.run do |config|
 
   # config.vm.network :hostonly, "192.168.33.10"
   #config.vm.host_name = 'chef-server'
-  #config.vm.network :bridged, :mac => '080027B2053A'
-  config.vm.base_mac = '080027B2053A'
+  config.vm.network :bridged, :mac => '080027B2053A'
+  #config.vm.base_mac = '080027B2053A'
 
   config.vm.forward_port 4040, 4040
   config.vm.forward_port 4000, 4000
