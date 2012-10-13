@@ -10,11 +10,11 @@ end
 
 package "python-psycopg2"
 
-template '/etc/nginx/sites-available/djproject' do
-  source "nginx_host.conf.erb"
-
-  notifies :restart, resources(:service => "nginx")
-end
-link '/etc/nginx/sites-enabled/djproject' do
-  to '/etc/nginx/sites-available/djproject'
-end
+#template '/etc/nginx/sites-available/djproject' do
+#  source "nginx_host.conf.erb"
+#
+#  notifies :restart, resources(:service => "nginx")
+#end
+#link '/etc/nginx/sites-enabled/djproject' do
+#  to '/etc/nginx/sites-available/djproject'
+#end

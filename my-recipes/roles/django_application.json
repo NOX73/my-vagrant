@@ -9,7 +9,6 @@
   "chef_type": "role",
   "run_list": [
     "recipe[apt]",
-    "recipe[nginx]",
     "recipe[postgresql]",
     "recipe[django]"
   ],
