@@ -9,6 +9,8 @@ postgresql_database "vagrant" do
 end
 
 package "python-psycopg2"
+package "libpq-dev"
+package "python-dev"
 
 #template '/etc/nginx/sites-available/djproject' do
 #  source "nginx_host.conf.erb"
