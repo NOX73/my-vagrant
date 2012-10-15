@@ -14,6 +14,10 @@ Vagrant::Config.run do |config|
   config.vm.forward_port 8085, 8085
   config.vm.forward_port 8086, 8086
 
+
+    config.vm.customize ["modifyvm", :id, "--memory", 512]
+
+
    config.vm.provision :chef_solo do |chef|
      chef.cookbooks_path = ["../my-recipes/cookbooks", "../my-recipes/kaize-cookbooks"]
      chef.roles_path = "../my-recipes/roles"
