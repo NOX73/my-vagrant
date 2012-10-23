@@ -6,6 +6,7 @@ package "vpnc"
 package "vim"
 package "git-core"
 package "curl"
+package "libcurl4-gnutls-dev"
 package "libcairo2-dev"
 package "libpango1.0-dev"
 
