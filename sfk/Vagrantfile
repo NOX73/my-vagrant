@@ -31,7 +31,7 @@ Vagrant::Config.run do |config|
             :user_installs => [
             {
                 :user => 'vagrant',
-                :rubies  => ['1.9.2', 'ruby-1.9.2-p290'],
+                :rubies  => ['1.9.2', '1.9.3', 'ruby-1.9.2-p290'],
                 :default_ruby  => '1.9.2',
                 :gems => {
                     'ruby-1.9.2' => [
