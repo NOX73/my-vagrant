@@ -45,6 +45,18 @@ Vagrant::Config.run do |config|
                         {
                             :name => 'chef'
                         }
+                    ],
+                    'ruby-1.9.3' => [
+                        {
+                            :name => 'sfk',
+                            :source => 'http://gems.undev.cc'
+                        },
+                        {
+                            :name => 'ffi-rzmq'
+                        },
+                        {
+                            :name => 'chef'
+                        }
                     ]
                 }
             }
