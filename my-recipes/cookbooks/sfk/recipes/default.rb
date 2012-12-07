@@ -24,3 +24,15 @@ include_recipe "zeromq-cookbook::default"
 #  members "vagrant"
 #  append true
 #end
+
+#/etc/apt/sources.list
+#
+#deb http://debmirror.undev.cc/undev squeeze xfonts
+#
+#Сделай
+#wget -O- http://debmirror.undev.cc/undev/undev-mirror-key.asc | apt-key add -
+#apt-get update
+#
+#После этого
+#
+#apt-get install xfonts-arial xfonts-circle xfonts-daxline xfonts-din xfonts-handbook xfonts-handbookpro xfonts-helvetica-neue xfonts-ptsans xfonts-russian-rail xfonts-times-new-roman xfonts-typotheque
