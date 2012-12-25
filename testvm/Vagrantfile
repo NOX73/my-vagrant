@@ -1,0 +1,29 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant::Config.run do |config|
+  config.vm.box = "debian-squeeze-64"
+  config.vm.box_url = "http://dl.dropbox.com/u/937870/VMs/squeeze64.box"
+  #config.vm.boot_mode = :gui
+
+  config.vm.customize ["modifyvm", :id, "--memory", 1024]
+
+  # config.vm.network :hostonly, "192.168.33.10"
+  config.vm.network :bridged
+  #config.vm.forward_port 8080, 8080
+
+  config.vm.share_folder "results", "~/webservertests", "~/kaize/webservertests"
+
+   config.vm.provision :chef_solo do |chef|
+     chef.cookbooks_path = ["../my-recipes/cookbooks", "../my-recipes/kaize-cookbooks"]
+     chef.roles_path = "../my-recipes/roles"
+     #chef.data_bags_path = "../my-recipes/data_bags"
+     chef.add_recipe "testvm"
+
+     # You may also specify custom JSON attributes:
+     # chef.json = {  }
+   end
+
+end
