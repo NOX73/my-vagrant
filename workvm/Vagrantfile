@@ -6,21 +6,25 @@
 Vagrant::Config.run do |config|
   config.vm.box = "debian-squeeze-64"
   config.vm.box_url = "http://dl.dropbox.com/u/937870/VMs/squeeze64.box"
-  #config.vm.boot_mode = :gui
 
+  #config.vm.boot_mode = :gui
   config.vm.customize ["modifyvm", :id, "--memory", 512]
 
   # config.vm.network :hostonly, "192.168.33.10"
   config.vm.network :bridged
+
   config.vm.forward_port 80, 8080
   config.vm.forward_port 9292, 9292
+
   config.vm.share_folder "Dropbox", "~/Dropbox", "~/Dropbox"
   config.vm.share_folder "kaize", "~/kaize_host", "~/kaize"
 
    config.vm.provision :chef_solo do |chef|
-     chef.cookbooks_path = ["../my-recipes/cookbooks", "../my-recipes/kaize-cookbooks"]
+     chef.cookbooks_path = ["~/chef/cookbooks", "~/chef/my-cookbooks"]
      chef.roles_path = "../my-recipes/roles"
+
      #chef.data_bags_path = "../my-recipes/data_bags"
+     
      chef.add_recipe "workvm"
      chef.add_role "rails_application"
 
