@@ -1,5 +1,0 @@
-maintainer       "Alexandr Rozhnov"
-maintainer_email "gnox73@gmail.com"
-license          "MIT License"
-description      "django recipe"
-version          "0.1"
