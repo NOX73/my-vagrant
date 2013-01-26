@@ -10,8 +10,8 @@ Vagrant::Config.run do |config|
   #config.vm.boot_mode = :gui
   config.vm.customize ["modifyvm", :id, "--memory", 512]
 
-  # config.vm.network :hostonly, "192.168.33.10"
-  config.vm.network :bridged
+  #config.vm.network :hostonly, "192.168.33.10"
+  #config.vm.network :bridged
 
   config.vm.forward_port 80, 8080
   config.vm.forward_port 9292, 9292
@@ -30,8 +30,15 @@ Vagrant::Config.run do |config|
 
      # You may also specify custom JSON attributes:
      chef.json = {
+        :rvm => {
+            :install_rubies => false,
+            :default_ruby => "ruby-1.9.3-p194"
+        },
+        :elasticsearch => {:version => '0.20.2'},
         :mysql => {
-            :server_root_password => ''
+            :server_root_password => '',
+            :server_debian_password => '',
+            :server_repl_password => ''
         }
       }
    end
