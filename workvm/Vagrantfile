@@ -4,8 +4,8 @@
 # vi: set ft=ruby :
 
 Vagrant::Config.run do |config|
-  config.vm.box = "debian-squeeze-64"
-  config.vm.box_url = "http://dl.dropbox.com/u/937870/VMs/squeeze64.box"
+  config.vm.box = "debian-squeeze-64-special"
+  config.vm.box_url = "http://dl.dropbox.com/u/54390273/vagrantboxes/Squeeze64_VirtualBox4.2.4.box"
 
   #config.vm.boot_mode = :gui
   config.vm.customize ["modifyvm", :id, "--memory", 512]
